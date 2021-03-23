@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Mon Premier Formulaire</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Votre Avis Nous Interesse</h1>
+    <section id="infos">
+      <table>
+        <div class="personal-info">
+          <tr>
+            <th>informations Peronnelles</th>
+            <th>informations de Contact</th>
+          </tr>
+            <tr>
+              <td>
+              <ol>
+                <li>
+                  <form>
+                    <label for="nom">Nom</label>
+                    <input type="text" name="nom"><br/>
+                  </form>
+                </li>
+
+                <li>
+                  <form>
+                    <label for="la-date">Date de naissance</label>
+                    <input type="date" name="la-date"><br/>
+                  </form>
+                </li>
+
+                <li>
+                  <form>
+                    <label for="site">Sit</label>
+                    <input type="url" name="site" placeholder="http://example.com"><br/>
+                  </form>
+                </li>
+
+                  <li>
+                    <form>
+                      <label for="emploi">Emploi</label>
+                      <select name="emploi">
+                        <option value="etudiant">Etudiant</option>
+                        <option value="netadmin">Administrateur Reseau</option>
+                        <option value="dev web">Developpeur Web</option>
+                        <option value="web designer">Web Designer</option>
+                        <option value="devops">DevOps</option>
+                      </select>
+                    </form>
+                  </li>
+
+                  <li>
+                    <form>
+                      <label for="salary">Approx. Salaire annuel</label><br/>
+                      <input type="number" name="salary" placeholder="$" step="1000"><br/>
+                    </form>
+                  </li>
+              </ol>
+            </td>
+        </div>
+
+        <div class="contact-info">
+          <td>
+          <ol>
+            <li>
+              <form>
+                <label for="addr-1">Adresse ligne 1</label><br/>
+                <input type="text" name="addr-1"><br/>
+              </form>
+            </li>
+
+            <li>
+              <form>
+                <label for="add-2">Adresse ligne 2</label><br/>
+                <input type="text" name="addr-2"><br/>
+              </form>
+            </li>
+
+            <li>
+              <form>
+                <label for="country">Pays</label>
+                <select name="country">
+                  <option value="dz">Algerie</option>
+                  <option value="TN">Tunisie</option>
+                  <option value="MR">Maroc</option>
+                </select>
+              </form>
+            </li>
+
+            <li>
+              <form>
+                <label for="phone-number">Tel</label>
+                <input type="tel" name="phone-number" placeholder="0x xx xx xx xx" pattern="[0-7]{2} [0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}"><br/>
+              </form>
+            </li>
+
+            <li>
+              <form>
+                <label for="courriel">Courriel</label>
+                <input type="text" name="courriel"><br/>
+              </form>
+            </li>
+          </ol>
+          </td>
+        </div>
+      </tr>
+    </table>
+    </section>
+
+    <section class="preferences">
+      <h2>Preferences</h2>
+      <div class="colours">
+        <form>
+          <label for="couleur">Choisir une couleur: </label>
+          <input type="color" name="couleur"><br/>
+        </form>
+        <form>
+          <label for="slider">Sur une echelle de 1 a 10, quel est votre degre d'enthouiasme pour HTML5 ?</label>
+          <input type="range" name="slider"><br/>
+        </form>
+      </div>
+      <div class="bouton">
+        <br/><input type="button" value="Envoyer">
+      </div>
+    </section>
+  </body>
+</html>
